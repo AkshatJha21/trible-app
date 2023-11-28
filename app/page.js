@@ -1,5 +1,6 @@
 import ButtonFill from "@/components/buttons/ButtonFill";
 import ButtonOutline from "@/components/buttons/ButtonOutline";
+import Modal from "@/components/modals/Modal";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
                 {/* Get started Button ends here */}
                 {/* Signin and signup for below sm */}
                 <div className="sm:hidden flex items-center ">
-                <ButtonOutline text={"Sign In"}/>
+                <ButtonOutline text={"Sign In"} />
                 <ButtonFill text={"Sign Up"}/>
                 </div>
                 {/* Signin and signup for below sm Buttons end here */}
@@ -122,6 +123,7 @@ export default function Home() {
             </span>
           </div>
         </footer>
+        <Modal isOpen/>
       </div>
     </>
   );
