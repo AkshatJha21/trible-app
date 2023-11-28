@@ -1,4 +1,5 @@
-import Button from "@/components/Button";
+import ButtonFill from "@/components/buttons/ButtonFill";
+import ButtonOutline from "@/components/buttons/ButtonOutline";
 
 export default function Home() {
   return (
@@ -12,14 +13,8 @@ export default function Home() {
           </h2>
           {/* User Auth btns -> Signup signin for sm-screen and above */}
           <div className="sm:flex hidden items-center ">
-            <Button
-              className="text-white px-4 py-2 text-md rounded-sm outline outline-1 outline-offset-0"
-              text={"Sign In"}
-            />
-            <Button
-              className="text-primary px-4 py-2 rounded-sm bg-[#00E091] outline outline-2 outline-offset-0 outline-[#00E091]"
-              text={"Sign Up"}
-            />
+            <ButtonOutline text={"Sign In"}/>
+            <ButtonFill text={"Sign Up"}/>
           </div>
           {/* User Auth div ends here */}
         </div>
@@ -37,22 +32,13 @@ export default function Home() {
                 </p>
                 {/* Get started Button starts*/}
                 <div>
-                  <Button
-                    className="text-primary px-3 py-1 rounded-sm bg-[#00E091] outline outline-2 outline-offset-0 outline-[#00E091] hidden sm:block"
-                    text={"Get Started"}
-                  />
+                  <ButtonFill className={"hidden sm:block"} text={"Get Started"}/>
                 </div>
                 {/* Get started Button ends here */}
                 {/* Signin and signup for below sm */}
                 <div className="sm:hidden flex items-center ">
-                  <Button
-                    className="text-white px-4 py-2 text-md rounded-sm outline outline-1 outline-offset-0"
-                    text={"Sign In"}
-                  />
-                  <Button
-                    className="text-primary px-4 py-2 rounded-sm bg-[#00E091] outline outline-2 outline-offset-0 outline-[#00E091]"
-                    text={"Sign Up"}
-                  />
+                <ButtonOutline text={"Sign In"}/>
+                <ButtonFill text={"Sign Up"}/>
                 </div>
                 {/* Signin and signup for below sm Buttons end here */}
               </div>
