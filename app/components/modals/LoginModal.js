@@ -4,7 +4,7 @@ import axios from "axios";
 import { useCallback, useState } from "react";
 import { FcGoogle } from 'react-icons/fc';
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import useLoginModal from "@/app/hooks/useLoginModal";
+import useLoginModal from "../../hooks/useLoginModal";
 import useRegisterModal from "../../hooks/useRegisterModal";
 import Modal from "./Modal";
 import FormHeader from "../forms/FormHeader"
