@@ -22,7 +22,7 @@ const Hero = () => {
                 </p>
                 {/* Get started Button starts*/}
                 <div>
-                  <ButtonFill onClick={loginModal.onOpen} className={"hidden sm:block"} text={"Get Started"}/>
+                  <ButtonFill onClick={registerModal.onOpen} className={"hidden sm:block"} text={"Get Started"}/>
                 </div>
                 {/* Get started Button ends here */}
                 {/* Signin and signup for below sm */}
