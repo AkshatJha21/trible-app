@@ -11,7 +11,6 @@ import FormHeader from "../forms/FormHeader"
 import Input from "../forms/Input"
 import ButtonOutline from "../buttons/ButtonOutline";
 
-
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
     const loginModal = useLoginModal();
@@ -19,6 +18,7 @@ const RegisterModal = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         defaultValues: {
+          name: "",
           email: "",
           password: "",
         },
@@ -50,6 +50,13 @@ const RegisterModal = () => {
     const bodyContent = (
       <div className="flex flex-col gap-4">
         <FormHeader title="Sign Up" subtitle="Create a new account"/>
+        <Input
+          id="name"
+          label="Name"
+          disabled={isLoading}
+          errors={errors}
+          required
+        />
         <Input
           id="email"
           label="Email"

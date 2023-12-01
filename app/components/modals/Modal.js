@@ -83,9 +83,9 @@ const Modal = (props) => {
                             <button onClick={handleClose} className='p-1 border-0 hover:opacity-70 transition absolute right-9 text-white'>
                                 <IoMdClose size={18} />
                             </button>
-                            <div className='text-lg font-normal text-[#00E091]'>
+                            {/* <div className='text-lg font-normal text-[#00E091]'>
                                 {title}
-                            </div>
+                            </div> */}
                         </div>
                         {/* Body */}
                         <div className='relative p-6 flex-auto text-white'>
